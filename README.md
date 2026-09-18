@@ -77,7 +77,7 @@ planning phase. The building blocks it will compose are catalogued in [docs/tool
 
 ## Related projects
 
-- [Local AI is not CHEAP](https://localai.isnot.cheap) ([GitHub](https://github.com/AISidesKicks/localai-isnot-cheap)) -
-  a sibling EDU lab on metering and billing AI tokens for local inference.
+- [AISidesKicks](https://github.com/AISidesKicks) -
+  the umbrella home for sibling EDU labs on metering and billing AI tokens for local inference.
 
-Maintained by [Rudolf Kutina](https://linkedin.com/in/rudolfkutina).
+Maintained by [AISidesKicks](https://aha.aisideskicks.fyi/).
