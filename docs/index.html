@@ -1,7 +1,286 @@
-[rainbow-redoras-dev](https://rainbow.redoras.dev) [github](https://github.com/AISidesKicks/rainbow-redoras-dev)
-AI needs REDORAS - **R**apid **E**xploitation & **D**eception **O**perations for **R**esilient **A**rchitecture & **S**ystems.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rainbow REDORAS - Rapid Exploitation & Deception Operations for Resilient Architecture & Systems. An educational lab for systems thinking, resilience engineering, chaos engineering, rainbow teaming, and reproducible behavioral analysis of AI systems.">
+    <title>Rainbow REDORAS — Resilient Architecture &amp; Systems (EDU)</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem;
+            background: #fafafa;
+        }
+        h1 {
+            font-size: 1.6rem;
+            margin-bottom: 0.25rem;
+        }
+        .subtitle {
+            font-weight: 700;
+            color: #d35400;
+            font-size: 1.15rem;
+            margin-bottom: 1.5rem;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        .highlight {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        .image-placeholder {
+            margin: 2.5rem 0;
+            border: 2px dashed #cbd5e1;
+            padding: 3rem 1rem;
+            text-align: center;
+            background: #fff;
+            color: #64748b;
+            border-radius: 6px;
+            font-family: monospace;
+        }
+        footer {
+            margin-top: 3rem;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            width: 100%;
+        }
+        .footer-links {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+        .footer-repo {
+            font-size: 1.15rem;
+            font-weight: 700;
+        }
+        .footer-powered {
+            margin: 0.5rem 0 0;
+        }
+        .footer-projects {
+            list-style: disc;
+            padding-left: 1.25rem;
+            margin: 0;
+            color: #64748b;
+        }
+        .footer-projects li {
+            margin-bottom: 0.35rem;
+        }
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .divider {
+            border-top: 6px double #d35400;
+            margin: 2.5rem 0;
+        }
+        .selfstudy {
+            font-weight: 700;
+            color: #2c3e50;
+            font-size: 1.15rem;
+            margin: 1.5rem 0 1rem;
+        }
+        .big-question {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin: 1.25rem 0;
+        }
+        .duo {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .duo > .card {
+            flex: 1 1 300px;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1.25rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+        .card img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 0 auto;
+        }
+        .video-frame {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            margin-top: 1rem;
+        }
+        .video-frame iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 8px;
+        }
+        .topics ol {
+            margin: 1rem 0 1.5rem;
+            padding-left: 1.5rem;
+        }
+        .topics li {
+            margin-bottom: 0.75rem;
+        }
+    </style>
+</head>
+<body>
 
-https://arxiv.org/abs/2402.16822 Rainbow Teaming: Open-Ended Generation of Diverse Adversarial Prompts
+    <h1>Rainbow REDORAS (<a href="https://rainbow.redoras.dev">rainbow.redoras.dev</a>) <a href="https://github.com/AISidesKicks/rainbow-redoras-dev" target="_blank" rel="noopener">[github]</a></h1>
+    <div class="subtitle">AI needs REDORAS - <strong>R</strong>apid <strong>E</strong>xploitation &amp; <strong>D</strong>eception <strong>O</strong>perations for <strong>R</strong>esilient <strong>A</strong>rchitecture &amp; <strong>S</strong>ystems.</div>
 
-https://www.youtube.com/watch?v=4hi9JavKrkc as "Building a Vulnerability Discovery Harness w/ Dan Jones. Red Team Engineer @ Cloudflare"
+    <p>The AI scene is changing fast. We see a lot of interesting research, but we do not have full access to the LLMs, their harnesses, their setups, and the supporting tools and code.</p>
 
+    <p class="highlight">REDORAS is an educational lab for studying AI systems <em>as systems</em> - with systems thinking, resilience engineering, chaos engineering, rainbow teaming, and reproducible behavioral analysis - using customizable harnesses we build ourselves. The stated goal is to arrive at our own custom harness.</p>
+
+    <p>Read the full project hub in the <a href="../README.md">README</a>.</p>
+
+    <div style="margin: 2rem 0; text-align: center;">
+        <img
+            src="redoras.jpeg"
+            alt="Rainbow REDORAS"
+            style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);"
+            loading="lazy"
+        >
+    </div>
+
+    <div class="card">
+        <p class="selfstudy">Scope - read this first</p>
+        <p>REDORAS is <strong>resilience and reproducible-behavioral-analysis research</strong> on systems you own or are authorized to test. It is <strong>not</strong> a dual-use offensive-security toolkit.</p>
+        <ul>
+            <li>Only test systems you own or have explicit authorization to test.</li>
+            <li>Log and manifest every run so results are auditable and reproducible.</li>
+            <li>Seek graceful degradation and recovery - never live-target harm.</li>
+        </ul>
+        <p>Full policy: <a href="tools.md#governance">Governance</a>.</p>
+    </div>
+
+    <p class="big-question">The system is not the model. Behavior emerges from the whole.</p>
+    <p>REDORAS treats an AI system as <strong>model + harness + infrastructure + data + evaluation loop</strong>, and studies how it behaves, how it fails, and how to make it resilient.</p>
+
+    <div class="image-placeholder">
+        Figure: the REDORAS loop - frame &rarr; hypothesize &rarr; perturb &rarr; observe &rarr; analyze &rarr; harden<br>
+        Diagram placeholder - to be replaced.
+    </div>
+
+    <div class="divider"></div>
+
+    <p class="selfstudy">Pillars</p>
+    <p>Start anywhere; each pillar is a self-contained doc.</p>
+
+    <div class="duo">
+        <div class="card">
+            <p><strong>Systems Thinking</strong> - boundaries, stocks and flows, feedback loops, delays, emergence, leverage points, and mental models. Why behavior cannot be read off a single component.</p>
+            <p><a href="systems-thinking.md">Read systems-thinking.md</a></p>
+        </div>
+        <div class="card">
+            <p><strong>Resilience Engineering</strong> - resilience vs robustness, Safety-II, the four potentials, graceful degradation, SLOs and error budgets, and AI-specific failure modes.</p>
+            <p><a href="resilience-engineering.md">Read resilience-engineering.md</a></p>
+        </div>
+    </div>
+
+    <div class="duo">
+        <div class="card">
+            <p><strong>Chaos Engineering</strong> - steady-state hypotheses, blast radius and abort conditions, the experiment lifecycle, and AI-specific fault injection with authorization preconditions.</p>
+            <p><a href="chaos-engineering.md">Read chaos-engineering.md</a></p>
+        </div>
+        <div class="card">
+            <p><strong>Red Teaming</strong> - rainbow teaming: open-ended generation of diverse adversarial prompts for coverage, plus taxonomies, mutation, coverage metrics, and human review.</p>
+            <p><a href="red-teaming.md">Read red-teaming.md</a></p>
+        </div>
+    </div>
+
+    <div class="duo">
+        <div class="card">
+            <p><strong>Reproducible Behavioral Analysis</strong> - the reproducibility contract: pinned revisions, seeds, prompt manifests, hashes, behavior diffing, and statistical replication.</p>
+            <p><a href="behavioral-analysis.md">Read behavioral-analysis.md</a></p>
+        </div>
+        <div class="card">
+            <p><strong>Harnesses (tools)</strong> - the inventory of building blocks used to compose a harness, grouped by function, each tied to the pillar it serves.</p>
+            <p><a href="tools.md">Read tools.md</a></p>
+        </div>
+    </div>
+
+    <div class="card">
+        <p><strong>Custom Harness (the goal)</strong> - the project's destination: a declarative, pluggable, reproducible harness for behavioral experiments, specified in Markdown today and built later.</p>
+        <p><a href="harness.md">Read harness.md &rarr;</a></p>
+    </div>
+
+    <div class="image-placeholder">
+        Figure: chaos &rarr; resilience &rarr; behavior map<br>
+        Diagram placeholder - to be replaced.
+    </div>
+
+    <div class="divider"></div>
+
+    <p class="selfstudy">Inspirations</p>
+
+    <div class="duo">
+        <div class="card">
+            <p><strong>Rainbow Teaming</strong> - the site that names the approach: generating a diverse, open-ended set of adversarial prompts to map behavior rather than chasing a single exploit.</p>
+            <p><a href="https://sites.google.com/view/rainbow-teaming" target="_blank" rel="noopener">sites.google.com/view/rainbow-teaming</a></p>
+        </div>
+        <div class="card">
+            <p><strong>Rainbow Teaming: Open-Ended Generation of Diverse Adversarial Prompts</strong> - the paper behind the idea, and a reference for coverage-driven testing.</p>
+            <p><a href="https://arxiv.org/abs/2402.16822" target="_blank" rel="noopener">arXiv:2402.16822</a></p>
+        </div>
+    </div>
+
+    <div class="duo">
+        <div class="card">
+            <p><strong>Building a Vulnerability Discovery Harness</strong> - Dan Jones, Red Team Engineer @ Cloudflare, on what it takes to build a harness that finds behavior.</p>
+            <div class="video-frame">
+                <iframe src="https://www.youtube.com/embed/4hi9JavKrkc" title="Building a Vulnerability Discovery Harness w/ Dan Jones, Red Team Engineer @ Cloudflare" loading="lazy" allowfullscreen></iframe>
+            </div>
+            <p><a href="https://www.youtube.com/watch?v=4hi9JavKrkc" target="_blank" rel="noopener">Watch on YouTube (plain link fallback)</a></p>
+        </div>
+        <div class="card">
+            <p><strong>Ready to go deeper?</strong></p>
+            <p>Read the <a href="../README.md">README</a> for the full hub, or jump straight to the <a href="tools.md">tools inventory</a> and the <a href="harness.md">harness design</a>.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-top">
+            <span>Rainbow REDORAS</span>
+            <div class="footer-links">
+                <a href="https://github.com/AISidesKicks/rainbow-redoras-dev" target="_blank" rel="noopener" class="footer-repo">rainbow-redoras-dev (GitHub Repository)</a>
+                <a href="https://linkedin.com/in/rudolfkutina" target="_blank" rel="noopener" class="footer-repo">My LinkedIn</a>
+            </div>
+        </div>
+        <p class="footer-powered"><strong>Rainbow REDORAS</strong> relates to these projects:</p>
+        <ul class="footer-projects">
+            <li><a href="https://localai.isnot.cheap" target="_blank" rel="noopener">localai.isnot.cheap</a> - EDU AI LAB: metering and billing AI tokens in a small local AI lab.</li>
+            <li><a href="https://github.com/AISidesKicks/localai-isnot-cheap" target="_blank" rel="noopener">localai-isnot-cheap</a> - the sibling lab whose instrumentation this harness work builds on.</li>
+        </ul>
+    </footer>
+
+</body>
+</html>
